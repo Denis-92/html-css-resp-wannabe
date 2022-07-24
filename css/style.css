@@ -174,3 +174,11 @@ img {
     }
 
 }
+
+/* Responsive per intervallo oltre 768px fino a 1160px */
+
+@media screen and (min-width: 769px) and (max-width: 1160px) {
+    .container {
+        max-width: 769px;
+    }
+}
