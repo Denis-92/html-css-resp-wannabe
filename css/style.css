@@ -132,12 +132,45 @@ img {
 /* Responsive Tablet 768px o meno */
 
 @media screen and (max-width: 768px) {
+
     .container {
         max-width: 768px;
     }
+
 }
 
 
 /* Responsive Mobile 480px o meno */
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+
+    .container {
+        max-width: 480px;
+        padding: 0;
+    }
+
+    /* Elementi incolonnati */
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .lesson .col {
+        width: 100%;
+    }
+
+    .lesson .col img {
+        margin-bottom: 0;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+}
